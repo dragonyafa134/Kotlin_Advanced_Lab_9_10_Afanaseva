@@ -1,8 +1,8 @@
-
+package resources
 data class OutpostResource(
     val id: Int,
     val name: String,
-    val amount: Int
+    var amount: Int
 ){
     override fun toString(): String{
         return "Ваш ресурс $id | Имя: $name | Количество: $amount"

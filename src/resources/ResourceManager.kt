@@ -1,3 +1,8 @@
+package resources
+
+import modules.EnergyGenerator
+import modules.ResearchLab
+
 class ResourceManager {
     private  val resources = mutableListOf<OutpostResource>()
 
@@ -18,7 +23,7 @@ class ResourceManager {
 
 fun main(){
     val manager = ResourceManager()
-    manager.add(OutpostResource(1,"Minerals", 120))
+    manager.add(OutpostResource(1, "Minerals", 120))
     val generator = EnergyGenerator()
     val lab = ResearchLab()
 
