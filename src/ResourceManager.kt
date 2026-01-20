@@ -15,3 +15,15 @@ class ResourceManager {
         resources.forEach { println("${it.name} : ${it.amount}") }
     }
 }
+
+fun main(){
+    val manager = ResourceManager()
+    manager.add(OutpostResource(1,"Minerals", 120))
+    val generator = EnergyGenerator()
+    val lab = ResearchLab()
+
+    generator.performAction(manager)
+    lab.performAction(manager)
+    println()
+    manager.printAll()
+}
